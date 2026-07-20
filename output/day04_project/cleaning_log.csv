@@ -1,0 +1,19 @@
+﻿处理步骤,处理规则,处理前记录数,处理后记录数,影响记录数
+1,删除整行完全重复记录,5630,5630,0
+2,字段 Tenure 缺失值采用中位数填充,5630,5630,264
+2,字段 WarehouseToHome 缺失值采用中位数填充,5630,5630,251
+2,字段 HourSpendOnApp 缺失值采用中位数填充,5630,5630,255
+2,字段 NumberOfDeviceRegistered 缺失值采用中位数填充,5630,5630,0
+2,字段 SatisfactionScore 缺失值采用中位数填充,5630,5630,0
+2,字段 NumberOfAddress 缺失值采用中位数填充,5630,5630,0
+2,字段 OrderAmountHikeFromlastYear 缺失值采用中位数填充,5630,5630,265
+2,字段 CouponUsed 缺失值采用中位数填充,5630,5630,256
+2,字段 OrderCount 缺失值采用中位数填充,5630,5630,258
+2,字段 DaySinceLastOrder 缺失值采用中位数填充,5630,5630,307
+2,字段 CashbackAmount 缺失值采用中位数填充,5630,5630,0
+3,类别字段 PreferredLoginDevice 标准化：去除首尾空格、统一小写,5630,5630,0
+3,类别字段 PreferredPaymentMode 标准化：去除首尾空格、统一小写,5630,5630,0
+3,类别字段 PreferedOrderCat 标准化：去除首尾空格、统一小写,5630,5630,0
+3,类别字段 MaritalStatus 标准化：去除首尾空格、统一小写,5630,5630,0
+4,字段 CustomerID 转换为int数值类型,5630,5630,5630
+4,字段 Churn 转换为int数值类型,5630,5630,5630

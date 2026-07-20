@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户生命周期详情</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- 复用项目原有导航栏 -->
+    <nav>
+        <a href=" ">数据看板</a >
+        <a href="/segments" class="active">生命周期详情</a >
+        <a href="/assistant">智能问答</a >
+    </nav>
+
+    <div class="container">
+        <h2>用户各生命周期阶段统计详情</h2>
+        <table border="1" cellpadding="6" cellspacing="0">
+            <tr>
+                <th>生命周期阶段</th>
+                <th>用户数</th>
+                <th>流失人数</th>
+                <th>流失率(%)</th>
+            </tr>
+            {% for item in data %}
+            <tr>
+                <td>{{item.TenureGroup }}</td>
+                <td>{{item.用户数}}</td>
+                <td>{{item.流失人数}}</td>
+                <td>{{item.流失率}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <div style="margin-top:20px;padding:12px;border:1px solid #ccc;border-radius:4px;">
+            <h4>量化数据分析结论</h4>
+            <p>{{ analysis_text }}</p >
+        </div>
+    </div>
+</body>
+</html>
